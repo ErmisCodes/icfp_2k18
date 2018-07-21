@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # SYSTEM STATE
 target_model = []
 energy = 0
@@ -62,7 +64,8 @@ with open("LA001_tgt.mdl", "rb") as f:
         target_model.append( byte[0] & (0b10000000) )
         byte = f.read(1)
         # print (int.from_bytes(byte,byteorder = 'big'))
+print("bytes read:")
 print(i)
-print(count_filled(R))
+print("filled pixels:")
 print(count_filled(R))
 new_count = 0
